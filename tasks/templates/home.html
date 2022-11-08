@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="container py-5">
+    <section class="card card-body">
+        <h1 class="display-1 text-center">App Notes and Contacts</h1>
+        <p>
+            En esta web, nos permitira crear una listas de notas haciendo uso del framework de Django. 
+            En la página principal mostrará todas las listas de notas pendientes. 
+            Al hacer clic en el botón crear una nueva nota , 
+            aparecerá una página donde podremos nombrar y crear una nueva nota: podemos darle un título al elemento 
+            y poder agregar más detalles en el cuadro de descripción. Ademas podemos permitir actualizar y eliminar
+            dicha tarea ya creada.
+        </p>
+        <div class="text-center">
+            <a class="btn btn-primary" href="/signin/">
+                Ingresar
+            </a>
+            <a class="btn btn-danger" href="/signup/">
+                Registrarse
+            </a>
+        </div>
+    </section>
+</main>
+{% endblock %}
